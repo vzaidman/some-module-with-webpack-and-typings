@@ -1,0 +1,25 @@
+{
+  "name": "some-module",
+  "version": "1.0.0",
+  "description": "some module",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "compile": "webpack --config webpack.library.build.js",
+    "postinstall": "typings i"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.14"
+  }
+}
