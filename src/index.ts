@@ -1,3 +1,6 @@
+import 'lodash';
+import 'angular';
+
 import SomeService, {ISomeService} from './services/service';
 import Progressbar from './directive/Progressbar';
 

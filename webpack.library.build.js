@@ -2,7 +2,6 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: ['./src/index.ts'],
-    vendor: ['angular', 'lodash'],
     output: {
         filename: 'index.js',
         path: './dist',
@@ -17,13 +16,12 @@ module.exports = {
         modulesDirectories: ['node_modules']
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            warning: false,
-            mangle: true,
-            comments: false
-        }),
-        new webpack.optimize.OccurenceOrderPlugin()
+        new webpack.optimize.UglifyJsPlugin({ warning: false, mangle: true, comments: false })
     ],
+    externals: {
+        'angular': 'angular',
+        'lodash': '_'
+    },
     module:{
         loaders: [
             { test: /\.ts$/, loader: 'ts' },
