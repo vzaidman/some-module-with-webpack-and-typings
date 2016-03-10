@@ -1,6 +1,6 @@
 import 'angular';
 
-interface IProgressbarScope extends ng.IScope {
+export interface IProgressbarScope extends ng.IScope {
     value : number;
 }
 

@@ -2,8 +2,8 @@ import 'lodash';
 import 'angular';
 import SomeService, {ISomeService} from './services/service';
 
-import DemoDirective from './directive/DemoDirective';
-export {DemoDirective};
+import Progressbar from './directive/Progressbar';
+export {Progressbar};
 
 export class MyImplementationOfISomeService implements ISomeService{
     gg:string;

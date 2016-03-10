@@ -1,4 +1,6 @@
 import { ISomeService } from './services/service';
+import Progressbar from './directive/Progressbar';
+export { Progressbar };
 export declare class MyImplementationOfISomeService implements ISomeService {
     gg: string;
     bb: string;
