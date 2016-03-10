@@ -19,8 +19,8 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin({ warning: false, mangle: true, comments: false })
     ],
     externals: {
-        'angular': 'angular',
-        'lodash': 'lodash'
+        'angular': { root: 'angular' },
+        'lodash': { root: '_' }
     },
     module:{
         loaders: [
