@@ -13,7 +13,7 @@ module.exports = {
         extensions: ['', '.ts', '.js', '.json']
     },
     resolveLoader: {
-        modulesDirectories: ["node_modules"]
+        modulesDirectories: ['node_modules']
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
@@ -25,7 +25,8 @@ module.exports = {
     ],
     module:{
         loaders: [
-            {test: /\.ts$/, loader: 'ts-loader'}
+            { test: /\.ts$/, loader: 'ts' },
+            { test: /\.tpl$/, loader: 'raw' }
         ]
     }
 };

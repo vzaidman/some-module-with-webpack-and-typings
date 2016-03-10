@@ -1,8 +1,8 @@
 import 'lodash';
 import 'angular';
 import SomeService, {ISomeService} from './services/service';
-
 import Progressbar from './directive/Progressbar';
+
 export {Progressbar};
 
 export class MyImplementationOfISomeService implements ISomeService{
