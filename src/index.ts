@@ -1,4 +1,4 @@
-import * as _ from 'lodash';
+import 'lodash';
 import 'angular';
 
 import SomeService, {ISomeService} from './services/service';

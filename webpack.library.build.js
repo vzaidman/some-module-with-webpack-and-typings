@@ -20,7 +20,7 @@ module.exports = {
     ],
     externals: {
         'angular': 'angular',
-        'lodash': '_'
+        'lodash': 'lodash'
     },
     module:{
         loaders: [
