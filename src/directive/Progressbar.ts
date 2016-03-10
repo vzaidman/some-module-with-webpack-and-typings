@@ -1,5 +1,3 @@
-import 'angular';
-
 export interface IProgressbarScope extends ng.IScope {
     value : number;
 }
@@ -35,5 +33,7 @@ export default class Progressbar implements ng.IDirective {
                 scope.value = scope.value + 10;
             });
         }, 1000);
+
+        console.log('using angular in directive: ' + angular.toJson({"a": "angular"}));
     }
 }
