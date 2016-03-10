@@ -16,7 +16,8 @@ module.exports = {
         modulesDirectories: ['node_modules']
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({ warning: false, mangle: true, comments: false })
+        new webpack.optimize.UglifyJsPlugin({ warning: false, mangle: true, comments: false }),
+        new webpack.ProvidePlugin({ '_': 'lodash', 'angular': 'angular'})
     ],
     externals: ['angular', 'lodash'],
     module:{
