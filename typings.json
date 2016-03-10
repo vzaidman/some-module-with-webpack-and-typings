@@ -3,6 +3,7 @@
   "version": false,
   "dependencies": {},
   "ambientDependencies": {
+    "angular": "registry:dt/angular#1.4.0+20160302143748",
     "lodash": "registry:dt/lodash#3.10.0+20160127144039"
   }
 }

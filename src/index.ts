@@ -1,5 +1,9 @@
-import SomeService, {ISomeService} from './services/service';
 import 'lodash';
+import 'angular';
+import SomeService, {ISomeService} from './services/service';
+
+import DemoDirective from './directive/DemoDirective';
+export {DemoDirective};
 
 export class MyImplementationOfISomeService implements ISomeService{
     gg:string;
