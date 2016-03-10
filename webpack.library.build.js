@@ -2,6 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: ['./src/index.ts'],
+    vendor: ['angular', 'lodash'],
     output: {
         filename: 'index.js',
         path: './dist',
