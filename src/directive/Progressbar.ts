@@ -1,4 +1,5 @@
-var template = require('./Progressbar.tpl');
+const template = require('./Progressbar.tpl');
+const angular = require('angular');
 
 export interface IProgressbarScope extends ng.IScope {
     value : number;

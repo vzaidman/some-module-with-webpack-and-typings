@@ -18,10 +18,7 @@ module.exports = {
     plugins: [
         new webpack.optimize.UglifyJsPlugin({ warning: false, mangle: true, comments: false })
     ],
-    externals: {
-        'angular': { root: 'angular' },
-        'lodash': { root: '_' }
-    },
+    externals: ['angular', 'lodash'],
     module:{
         loaders: [
             { test: /\.ts$/, loader: 'ts' },
